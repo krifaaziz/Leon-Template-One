@@ -5,6 +5,7 @@
   --clr-title: #ebeced;
   --clr-sous-title: rgb(121, 121, 121);
   --clr-paragraphe: rgba(68, 68, 68, 0.687);
+  --clr-darkgreen: #2c4755;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -237,7 +238,7 @@ body .container {
   top: -50px;
   height: calc(100% + 100px);
   width: 100px;
-  background-color: #2c4755;
+  background-color: var(--clr-darkgreen);
   z-index: -1;
 }
 @media (max-width: 1200px) {
@@ -403,4 +404,46 @@ body .container {
   .about .about-content .text {
     text-align: center;
   }
+}
+/*END ABOUT SECTION */
+/* CONTACT SECTION*/
+.contact {
+  background-color: #f6f6f6;
+  padding: 20px 0px 50px 0px;
+}
+.contact h1 {
+  text-align: center;
+  color: var(--clr-title);
+  font-size: 100px;
+  position: relative;
+  margin: 30px 0px;
+}
+.contact .under-title {
+  text-align: center;
+  margin: 0px;
+  transform: translateY(-58px);
+  color: var(--clr-sous-title);
+  font-size: 20px;
+}
+.contact h2 {
+  text-align: center;
+  color: var(--clr-darkgreen);
+  margin: 35px 0px 15px 0px;
+  font-size: 35px;
+  font-weight: 800;
+}
+.contact a {
+  display: block;
+  color: var(--clr-primary);
+  text-decoration: none;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+}
+.contact p {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact p i {
+  color: #2d4655;
 }
