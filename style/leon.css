@@ -7,6 +7,9 @@
   --clr-paragraphe: rgba(68, 68, 68, 0.687);
   --clr-darkgreen: #2c4755;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Work Sans", sans-serif;
 }
@@ -266,7 +269,7 @@ body .container {
 /*PORTFOLIO SECTION */
 .portfolio {
   background-color: #f6f6f6;
-  padding: 30px 0px;
+  padding: 30px 0px 50px 0px;
 }
 .portfolio h1 {
   text-align: center;
