@@ -1,0 +1,109 @@
+/* GLOBAL RULES */
+body {
+  font-family: "Work Sans", sans-serif;
+}
+body .container {
+  margin: auto;
+  padding: 0px 15px;
+}
+/* Small devices  */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Medium devices  */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/* Large devices  */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+/* Extra large devices  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+/* END GLOBAL RULES */
+/* NAVBAR */
+.navbar .navbarelements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.navbar .navbarelements .links {
+  position: relative;
+}
+.navbar .navbarelements .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.navbar .navbarelements .links:hover .icon span:nth-child(2) {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.navbar .navbarelements .links .icon span {
+  background-color: black;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.navbar .navbarelements .links .icon span:first-child,
+.navbar .navbarelements .links .icon span:last-child {
+  width: 100%;
+}
+.navbar .navbarelements .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.5s ease-in-out;
+}
+.navbar .navbarelements .links ul {
+  border: transparent;
+  padding: 0px;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  line-height: 2;
+  list-style: none;
+  display: none;
+}
+.navbar .navbarelements .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.navbar .navbarelements .links:hover ul {
+  display: block;
+}
+.navbar .navbarelements .links ul li a {
+  display: block;
+  color: black;
+  font-weight: 400;
+  padding: 10px;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+.navbar .navbarelements .links ul li:not(:last-child) {
+  text-decoration: none;
+  border-bottom: solid rgba(0, 0, 0, 0.237) 0.5px;
+}
+.navbar .navbarelements .links ul li a:hover {
+  transform: translateX(15px);
+  transition: 0.5s ease;
+}
+.navbar .navbarelements .links ul a:last-child {
+  border-bottom: none;
+}
+/* END NAVBAR */
