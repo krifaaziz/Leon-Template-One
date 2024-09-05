@@ -2,6 +2,9 @@
 :root {
   --clr-primary: #10cab7;
   --clr-secondary: black;
+  --clr-title: #ebeced;
+  --clr-sous-title: rgb(121, 121, 121);
+  --clr-paragraphe: rgb(68, 68, 68);
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -171,3 +174,91 @@ body .container {
     justify-content: center;
   }
 }
+/*END SECTION1 */
+/*SERVICE SECTION */
+.service {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.service h1 {
+  text-align: center;
+  color: var(--clr-title);
+  font-size: 100px;
+  position: relative;
+}
+.service #under-title {
+  text-align: center;
+  margin: 0px;
+  transform: translateY(-98px);
+  color: var(--clr-sous-title);
+  font-size: 20px;
+}
+.service .services-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.service .services-content .col {
+  flex: 1;
+}
+.service .services-content .col .srv {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex: 1;
+  margin-bottom: 30px;
+}
+.service .services-content .col .srv h3 {
+  margin-top: 0px;
+}
+.service .services-content .col .srv .text {
+  height: 160px;
+}
+.service .services-content .col .srv .text p {
+  line-height: 1.6;
+  color: var(--clr-paragraphe);
+}
+.service .services-content .col .srv i {
+  color: var(--clr-primary);
+  font-weight: 200;
+}
+.service .services-content .col img {
+  width: 260px;
+}
+.service .services-content .col .image {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.service .services-content .col .image:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  height: calc(100% + 100px);
+  width: 100px;
+  background-color: #2c4755;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .service .services-content .col:last-child {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .service .services-content {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .service .services-content .col .srv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .service .services-content .col .srv .text {
+    text-align: center;
+    height: 100px;
+  }
+}
+/*END SERVICE SECTION */
